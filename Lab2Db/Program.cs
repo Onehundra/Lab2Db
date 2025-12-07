@@ -31,7 +31,7 @@ namespace Lab2Db
                         break;
                     case 3:
                         Console.Clear();
-                        DeleteBookFromStore();
+                        DeleteFromBookStore();
                         break;
 
                     case 4:
@@ -105,7 +105,7 @@ namespace Lab2Db
             }
 
 
-            static void DeleteBookFromStore()
+            static void DeleteFromBookStore()
             {
                 using var db = new Lab2DbContext();
                 var shop = db.Butikerna.ToList();
